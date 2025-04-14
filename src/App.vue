@@ -1,29 +1,45 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import Hoofdmenu from './components/hoofdmenu.vue';
+import gebruiker from './components/gebruiker.vue';
 </script>
 
 <template>
+
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <!-- header goes here. full width of screen -->
+    <!--import header out of the menubalkDocent-->
+    <div class="hoofdmenu">
+      <Hoofdmenu></Hoofdmenu>'
+    </div>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+    <div class="gebruiker">
+      <gebruiker></gebruiker>
     </div>
   </header>
+  <div class="main">
 
-  <RouterView />
+    <RouterView />
+  </div>
+
+
+  <!-- een div links en een div rechts -->
 </template>
 
 <style scoped>
+/* .box {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+} */
+
 header {
   line-height: 1.5;
   max-height: 100vh;
+  background-color: rgb(17, 0, 255);
+  width: auto;
+  height: auto;
 }
 
 .logo {
@@ -71,6 +87,9 @@ nav a:first-of-type {
     display: flex;
     place-items: flex-start;
     flex-wrap: wrap;
+    background-color: red;
+    width: 100px;
+    height: 10px;
   }
 
   nav {
