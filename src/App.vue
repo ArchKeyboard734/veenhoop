@@ -39,7 +39,7 @@ header {
   max-height: 100vh;
   background-color: rgb(17, 0, 255);
   width: auto;
-  height: auto;
+  height: 100px;
 }
 
 .logo {
@@ -87,7 +87,7 @@ nav a:first-of-type {
     display: flex;
     place-items: flex-start;
     flex-wrap: wrap;
-    background-color: red;
+    background-color: rgb(98, 98, 98);
     width: 100px;
     height: 10px;
   }
